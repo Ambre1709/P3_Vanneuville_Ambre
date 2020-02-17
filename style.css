@@ -1,0 +1,77 @@
+
+
+/* ----------------------PAGE PRINCIPALE-------------------------*/
+
+p
+{
+	font-size: 1.2em;
+}
+header
+{
+	display: flex;
+	justify-content: center;
+	background-color: #9ccf56;
+}
+footer
+{
+	display: flex;
+	justify-content: space-around;
+	background-color: #9ccf56;
+}
+#box
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.menu
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 500px;
+	box-shadow: 0px 0px 10px 0px rgba(191,224,146,1);
+	margin: 20px;
+}
+.menu:hover
+{
+	background-color:rgba(191,224,146,0.5);
+}
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+/* ----------------------Menu 1-------------------------*/
+#container
+{
+	display: flex;
+	flex-direction: column;
+	background-color:rgba(191,224,146,0.5);
+	flex-wrap: nowrap;
+}
+.center
+{
+	display: flex;
+	justify-content: center;
+}
+.mini_box
+{
+	display: flex;
+	justify-content: space-around;
+}
+.left
+{
+	display: flex;
+	flex-direction: column;
+}
+.price
+{
+	display: flex;
+	flex-direction: column;
+}
+/* ----------------------Menu 2-------------------------*/
+/* ----------------------Menu 3-------------------------*/
+/* ----------------------Menu 4-------------------------*/
