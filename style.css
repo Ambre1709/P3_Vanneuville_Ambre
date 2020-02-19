@@ -36,7 +36,7 @@ footer
 }
 .menu:hover
 {
-	background-color:rgba(191,224,146,0.5);
+	background-color:#e2f1ce;
 }
 a
 {
@@ -49,13 +49,8 @@ a
 {
 	display: flex;
 	flex-direction: column;
-	background-color:rgba(191,224,146,0.5);
+	background-color:#e2f1ce;
 	flex-wrap: nowrap;
-}
-.center
-{
-	display: flex;
-	justify-content: center;
 }
 .mini_box
 {
@@ -71,6 +66,23 @@ a
 {
 	display: flex;
 	flex-direction: column;
+}
+.center
+{
+	background-color:yellow;
+	padding: 0px 50px 0px 50px;
+	top:-27px;
+	display:inline;
+    position:absolute;
+}
+.trait 
+{
+  height:4px;
+  width:auto;
+  background:black;
+  position:relative;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
 }
 /* ----------------------Menu 2-------------------------*/
 /* ----------------------Menu 3-------------------------*/
