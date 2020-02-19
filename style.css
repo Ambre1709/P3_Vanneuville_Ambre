@@ -71,9 +71,7 @@ a
 {
 	background-color:yellow;
 	padding: 0px 50px 0px 50px;
-	top:-27px;
-	display:inline;
-    position:absolute;
+	display:inline-block;
 }
 .trait 
 {
