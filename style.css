@@ -1,4 +1,4 @@
-@font-face {
+@font-face { /* Ohmyfood */
     font-family: 'balooregular';
     src: url('fonts/Baloo-Regular-webfont.eot');
     src: url('fonts/Baloo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -9,8 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
+@font-face { /* menu1 */
     font-family: 'calligraffitiregular';
     src: url('fonts/Calligraffiti-webfont.eot');
     src: url('fonts/Calligraffiti-webfont.eot?#iefix') format('embedded-opentype'),
@@ -20,9 +19,8 @@
          url('fonts/Calligraffiti-webfont.svg#calligraffitiregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-@font-face { 
+@font-face { /* menu2 */
     font-family: 'caviar_dreamsregular';
     src: url('fonts/CaviarDreams-webfont.eot');
     src: url('fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
@@ -32,9 +30,30 @@
          url('fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-@font-face {
+@font-face { /* menu3 */
+    font-family: 'redressedregular';
+    src: url('fonts/Redressed-webfont.eot');
+    src: url('fonts/Redressed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Redressed-webfont.woff2') format('woff2'),
+         url('fonts/Redressed-webfont.woff') format('woff'),
+         url('fonts/Redressed-webfont.ttf') format('truetype'),
+         url('fonts/Redressed-webfont.svg#redressedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { /* menu4 */
+    font-family: 'dubielplainregular';
+    src: url('fonts/Dubiel-webfont.eot');
+    src: url('fonts/Dubiel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Dubiel-webfont.woff2') format('woff2'),
+         url('fonts/Dubiel-webfont.woff') format('woff'),
+         url('fonts/Dubiel-webfont.ttf') format('truetype'),
+         url('fonts/Dubiel-webfont.svg#dubielplainregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { /* Texte */
     font-family: 'didact_gothicregular';
     src: url('fonts/didactgothic-regular-webfont.eot');
     src: url('fonts/didactgothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -44,41 +63,35 @@
          url('fonts/didactgothic-regular-webfont.svg#didact_gothicregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 
 /* ----------------------PAGE PRINCIPALE-------------------------*/
-h1
-{
+h1{
 	font-family: 'balooregular';
 }
-p
-{
+p{
 	font-size: 1.2em;
 	font-family: 'didact_gothicregular';
 }
-header
-{
+header{
 	display: flex;
 	justify-content: center;
 	background-color: #9ccf56;
 }
-footer
-{
+footer{
 	display: flex;
 	justify-content: space-around;
 	background-color: #9ccf56;
+	position: fixed;
+	bottom: 0;
 }
-#box
-{
+#box{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.menu
-{
+.menu{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -87,17 +100,15 @@ footer
 	box-shadow: 0px 0px 10px 0px rgba(191,224,146,1);
 	margin: 20px;
 }
-.menu:hover
-{
+.menu:hover{
 	background-color:#e2f1ce;
 }
-a
-{
+a{
 	color: black;
 	text-decoration: none;
-}
 
 /* ----------------------Menu 1-------------------------*/
+
 #container
 {
 	display: flex;
@@ -105,18 +116,15 @@ a
 	background-color:#e2f1ce;
 	flex-wrap: nowrap;
 }
-.mini_box
-{
+.mini_box{
 	display: flex;
 	justify-content: space-around;
 }
-.left
-{
+.left{
 	display: flex;
 	flex-direction: column;
 }
-.price
-{
+.price{
 	display: flex;
 	flex-direction: column;
 }
@@ -126,8 +134,7 @@ a
 	padding: 0px 50px 0px 50px;
 	display:inline-block;
 }
-.trait 
-{
+.trait {
   height:4px;
   width:auto;
   background:black;
@@ -135,6 +142,28 @@ a
   text-align: center;
   margin: 20px 0px 20px 0px;
 }
+.menu1{
+	font-family: 'calligraffitiregular';
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
 /* ----------------------Menu 2-------------------------*/
+.menu2{
+	font-family: 'caviar_dreamsregular';
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+}
 /* ----------------------Menu 3-------------------------*/
+.menu3{
+	font-family: 'redressedregular';
+	text-align: center;
+	font-size: 1.8em;
+}
 /* ----------------------Menu 4-------------------------*/
+.menu4{
+	font-family: 'dubielplainregular';
+	text-align: center;
+	font-size: 2em;
+}
