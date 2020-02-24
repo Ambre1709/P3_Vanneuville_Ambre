@@ -114,11 +114,15 @@ a{
     background-color: #00734d;
     display: flex;
     justify-content: center;
-    font-family: 'didact_gothicregular';
-    font-weight: bold;
-    margin-bottom: 90px;
     width: 300px;
     border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-bottom: 100px;
+    font-family: 'didact_gothicregular';
+    font-weight: bold;
     color: #ffd915;
 }
 /* ----------------------Menu 1-------------------------*/
