@@ -105,7 +105,7 @@ header{
 	margin: 50px 25px 50px 25px;
 }
 .menu:hover{
-	background-color:rgba(255,217,21,0.3);
+	background-color:rgba(0,0,0,0.1);
 }
 a{
 	color: black;
@@ -128,12 +128,15 @@ a{
 }
 /* ----------------------Menu 1-------------------------*/
 
-#container
+#container1
 {
 	display: flex;
 	flex-direction: column;
-	background-color:#e2f1ce;
+	background-color:#fad2d2;
 	flex-wrap: nowrap;
+    margin: 50px 50px 50px 50px;
+    padding-bottom: 20px;
+    border-radius: 30px;
 }
 .mini_box{
 	display: flex;
@@ -175,9 +178,34 @@ a{
     margin-left: auto;
     margin-right: auto
 }
-
+.reservation_menu1{
+    background-color: #00734d;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family: 'didact_gothicregular';
+    font-weight: bold;
+    color: #ffd915;
+}
 
 /* ----------------------Menu 2-------------------------*/
+#container2
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#fafad2;
+    flex-wrap: nowrap;
+    margin: 50px 50px 50px 50px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
 .menu2{
 	font-family: 'caviar_dreamsregular';
 	text-align: center;
@@ -206,8 +234,34 @@ a{
 .caviar_dreamsregular{
 font-family: 'caviar_dreamsregular';
 }
+.reservation_menu2{
+    background-color: #00734d;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family: 'didact_gothicregular';
+    font-weight: bold;
+    color: #ffd915;
+}
 
 /* ----------------------Menu 3-------------------------*/
+#container3
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#d0ecf9;
+    flex-wrap: nowrap;
+    margin: 50px 50px 50px 50px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
 .menu3{
 	font-family: 'redressedregular';
 	text-align: center;
@@ -216,8 +270,34 @@ font-family: 'caviar_dreamsregular';
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.reservation_menu3{
+    background-color: #00734d;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family: 'didact_gothicregular';
+    font-weight: bold;
+    color: #ffd915;
+}
 
 /* ----------------------Menu 4-------------------------*/
+#container4
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#fae6d2;
+    flex-wrap: nowrap;
+    margin: 50px 50px 50px 50px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
 .menu4{
 	font-family: 'dubielplainregular';
 	text-align: center;
@@ -225,4 +305,20 @@ font-family: 'caviar_dreamsregular';
             background: -webkit-linear-gradient(0.99turn, #3e923a, #90ff25);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.reservation_menu4{
+    background-color: #00734d;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family: 'didact_gothicregular';
+    font-weight: bold;
+    color: #ffd915;
 }
