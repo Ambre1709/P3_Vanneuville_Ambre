@@ -1,3 +1,4 @@
+/* ----------------------TYPOGRAPHIE-------------------------*/
 @font-face { /* Ohmyfood */
     font-family: 'balooregular';
     src: url('fonts/Baloo-Regular-webfont.eot');
@@ -65,7 +66,26 @@
     font-style: normal;
 }
 
-
+/* ----------------------HEADER-------------------------*/
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #00734d;
+}
+/* ----------------------FOOTER-------------------------*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00734d;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.jaune
+{
+    color:  #ffd915;
+}
 /* ----------------------PAGE PRINCIPALE-------------------------*/
 h1{
 	font-family: 'balooregular';
@@ -75,20 +95,6 @@ h1{
 p{
 	font-size: 1.2em;
 	font-family: 'didact_gothicregular';
-}
-header{
-	display: flex;
-	justify-content: center;
-	background-color: #00734d;
-}
-.footer{
-	display: flex;
-	justify-content: space-around;
-	background-color: #00734d;
-	position: fixed;
-	bottom: 0;
-    left: 0;
-    width: 100%;
 }
 #box{
 	display: flex;
@@ -104,12 +110,30 @@ header{
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 	margin: 50px 25px 50px 25px;
 }
-.menu:hover{
-	background-color:rgba(0,0,0,0.1);
+
+.test /*zoom sur l'image*/
+{
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
 }
-a{
-	color: black;
-	text-decoration: none;
+.test:hover /*zoom sur l'image*/
+{
+        transform: scale(1.15);
+}
+a
+{
+
+    text-decoration: none;
+}
+i /*icon*/
+{
+    font-size: 2em;
+    background: -webkit-linear-gradient(0.99turn, #f05060, #f6916a);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
 }
 .Prochainement{
     background-color: #00734d;
@@ -126,6 +150,20 @@ a{
     font-weight: bold;
     color: #ffd915;
 }
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    background-color:yellow;
+    padding: 0px 50px 0px 50px;
+    display:inline-block;
+}
+
 /* ----------------------Menu 1-------------------------*/
 
 #container1
@@ -133,42 +171,18 @@ a{
 	display: flex;
 	flex-direction: column;
 	background-color:#fad2d2;
-	flex-wrap: nowrap;
     margin: 50px 50px 50px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
-}
-.mini_box{
-	display: flex;
-	justify-content: space-around;
-}
-
-.left{
-	display: flex;
-	flex-direction: column;
-}
-.price{
-	display: flex;
-	flex-direction: column;
-}
-.center{
-	background-color:yellow;
-	padding: 0px 50px 0px 50px;
-	display:inline-block;
-}
-.trait {
-  height:4px;
-  width:auto;
-  background:black;
-  position:relative;
-  text-align: center;
-  margin: 20px 0px 20px 0px;
 }
 .menu1{
 	font-family: 'calligraffitiregular';
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.6em;
+    background: -webkit-linear-gradient(0.99turn, #f05060, #f6916a);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
 .responsive {
     width: 100%;
@@ -193,6 +207,14 @@ a{
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
+cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+.reservation_menu1:hover
+{
+        transform: scale(1.15);
 }
 
 /* ----------------------Menu 2-------------------------*/
@@ -201,7 +223,6 @@ a{
     display: flex;
     flex-direction: column;
     background-color:#fafad2;
-    flex-wrap: nowrap;
     margin: 50px 50px 50px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -249,6 +270,14 @@ font-family: 'caviar_dreamsregular';
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
+cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+.reservation_menu2:hover
+{
+        transform: scale(1.15);
 }
 
 /* ----------------------Menu 3-------------------------*/
@@ -257,7 +286,6 @@ font-family: 'caviar_dreamsregular';
     display: flex;
     flex-direction: column;
     background-color:#d0ecf9;
-    flex-wrap: nowrap;
     margin: 50px 50px 50px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -285,6 +313,14 @@ font-family: 'caviar_dreamsregular';
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
+cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+.reservation_menu3:hover
+{
+        transform: scale(1.15);
 }
 
 /* ----------------------Menu 4-------------------------*/
@@ -293,7 +329,6 @@ font-family: 'caviar_dreamsregular';
     display: flex;
     flex-direction: column;
     background-color:#fae6d2;
-    flex-wrap: nowrap;
     margin: 50px 50px 50px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -321,4 +356,44 @@ font-family: 'caviar_dreamsregular';
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
+cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+.reservation_menu4:hover
+{
+        transform: scale(1.15);
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*RESPONSIVE DESIGN*/
+
+/*ordi*/
+@media screen and (min-width: 1025px)
+{
+    .mini_box{
+        display: flex;
+         justify-content: space-around;
+    }
+}
+
+/*tablette*/
+@media screen and (max-width: 1024px)
+{
+    .mini_box
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .left
+    {
+        text-align: center;
+    }
+}
+
+/*smartphone*/
+@media only screen and (max-device-width:480px)
+{
+
 }
