@@ -86,22 +86,23 @@ header{
 {
     color:  #ffd915;
 }
-/* ----------------------PAGE PRINCIPALE-------------------------*/
-h1{
-	font-family: 'balooregular';
-    color: #ffd915;
-    font-size: 2.5em;
+.tremble:hover{
+    animation: wiggle 5s infinite;
 }
-p{
-	font-size: 1.2em;
-	font-family: 'didact_gothicregular';
+@keyframes wiggle{
+    0%{ transform: rotate(0deg) }
+    5%{ transform: rotate(-5deg) }
+    10%{ transform: rotate(5deg) }
+    15%{ transform: rotate(0deg) }
+    100%{ transform: rotate(0deg) }
 }
+/* ----------------------PAGE D'ACCUEIL-------------------------*/
 #box{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.menu{
+.menu{ 
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -134,8 +135,7 @@ i /*icon*/
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
-}
-.Prochainement{
+.prochainement{ 
     background-color: #00734d;
     display: flex;
     justify-content: center;
@@ -149,7 +149,47 @@ i /*icon*/
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
 }
+.prochainement:hover /*bouton prochainement*/
+{
+        transform: scale(1.15);
+}
+/* ----------------------ANIMATION POINTS-------------------------*/
+.dot{
+margin-top: 27px;
+margin-left: 10px;
+}
+.dot span{
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0 2px;
+    background-color: #ffd915;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: JumpingDots;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.dot span:nth-child(2){
+    animation-delay: 0.4s;
+}
+.dot span:nth-child(3){
+    animation-delay: 0.8s;
+}
+@keyframes JumpingDots{
+    30%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+/* ----------------------DANS LES 4 MENU-------------------------*/
 .left{
     display: flex;
     flex-direction: column;
@@ -158,12 +198,23 @@ i /*icon*/
     display: flex;
     flex-direction: column;
 }
-.center{
-    background-color:yellow;
-    padding: 0px 50px 0px 50px;
-    display:inline-block;
+h1{
+    font-family: 'balooregular';
+    color: #ffd915;
+    font-size: 2.5em;
 }
-
+p{
+    font-size: 1.2em;
+    font-family: 'didact_gothicregular';
+}
+.responsive {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 /* ----------------------Menu 1-------------------------*/
 
 #container1
@@ -184,15 +235,7 @@ i /*icon*/
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
-.responsive {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-.reservation_menu1{
+.reservation_menu1{ /*bouton réservation*/
     background-color: #00734d;
     display: flex;
     justify-content: center;
@@ -207,12 +250,12 @@ i /*icon*/
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
-cursor: pointer;
+    cursor: pointer;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
 }
-.reservation_menu1:hover
+.reservation_menu1:hover /*bouton réservation*/
 {
         transform: scale(1.15);
 }
@@ -255,7 +298,7 @@ cursor: pointer;
 .caviar_dreamsregular{
 font-family: 'caviar_dreamsregular';
 }
-.reservation_menu2{
+.reservation_menu2{ /*bouton réservation*/
     background-color: #00734d;
     display: flex;
     justify-content: center;
@@ -270,12 +313,12 @@ font-family: 'caviar_dreamsregular';
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
-cursor: pointer;
+    cursor: pointer;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
 }
-.reservation_menu2:hover
+.reservation_menu2:hover /*bouton réservation*/
 {
         transform: scale(1.15);
 }
@@ -298,7 +341,7 @@ cursor: pointer;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.reservation_menu3{
+.reservation_menu3{ /*bouton réservation*/
     background-color: #00734d;
     display: flex;
     justify-content: center;
@@ -313,12 +356,12 @@ cursor: pointer;
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
-cursor: pointer;
+    cursor: pointer;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
 }
-.reservation_menu3:hover
+.reservation_menu3:hover /*bouton réservation*/
 {
         transform: scale(1.15);
 }
@@ -337,11 +380,11 @@ cursor: pointer;
 	font-family: 'dubielplainregular';
 	text-align: center;
 	font-size: 2em;
-            background: -webkit-linear-gradient(0.99turn, #3e923a, #90ff25);
+    background: -webkit-linear-gradient(0.99turn, #3e923a, #90ff25);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.reservation_menu4{
+.reservation_menu4{ /*bouton réservation*/
     background-color: #00734d;
     display: flex;
     justify-content: center;
@@ -356,12 +399,12 @@ cursor: pointer;
     font-family: 'didact_gothicregular';
     font-weight: bold;
     color: #ffd915;
-cursor: pointer;
+    cursor: pointer;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
 }
-.reservation_menu4:hover
+.reservation_menu4:hover /*bouton réservation*/
 {
         transform: scale(1.15);
 }
@@ -385,6 +428,7 @@ cursor: pointer;
     {
         display: flex;
         flex-direction: column;
+         text-align: center;
     }
     .left
     {
