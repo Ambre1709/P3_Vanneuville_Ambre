@@ -229,7 +229,7 @@ p{
 .menu1{
 	font-family: 'calligraffitiregular';
 	text-align: center;
-	font-weight: bold;
+	font-weight: bold; 
 	font-size: 1.6em;
     background: -webkit-linear-gradient(0.99turn, #f05060, #f6916a);
      -webkit-background-clip: text;
@@ -408,7 +408,15 @@ font-family: 'caviar_dreamsregular';
 {
         transform: scale(1.15);
 }
-
+/* ----------------------Mentions légales-------------------------*/
+#box_mentions{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: 50px 25px 50px 25px;
+    padding: 50px 50px 50px 50px;
+}
 /*------------------------------------------------------------------------------------------------------------*/
 /*RESPONSIVE DESIGN*/
 
@@ -440,4 +448,49 @@ font-family: 'caviar_dreamsregular';
 @media only screen and (max-device-width:480px)
 {
 
+}
+
+
+
+
+
+
+/*------------------------------TEST / trait avec titre entrée, plat, dessert +souligner------------------------------------------------------------------------------*/
+
+#test_traits{
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+}
+.trait{
+    flex: 1;
+    max-width: 45%;
+    max-height: 80px;
+    min-width: 100px;
+}
+.calligraffitiregular{
+    flex: 1;
+        display: inline-block;
+    position: relative;
+    font-family: 'calligraffitiregular';
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.calligraffitiregular::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.calligraffitiregular:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
