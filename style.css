@@ -112,14 +112,14 @@ header{
 	margin: 50px 25px 50px 25px;
 }
 
-.test /*zoom sur l'image*/
+.zoom /*zoom sur l'image*/
 {
     cursor: pointer;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
 }
-.test:hover /*zoom sur l'image*/
+.zoom:hover /*zoom sur l'image*/
 {
         transform: scale(1.15);
 }
@@ -215,6 +215,12 @@ p{
     margin-left: auto;
     margin-right: auto
 }
+#test_traits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+}
 /* ----------------------Menu 1-------------------------*/
 
 #container1
@@ -235,30 +241,46 @@ p{
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
-.reservation_menu1{ /*bouton réservation*/
-    background-color: #00734d;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    border-radius: 10px;
+.menuu1{
+        font-family: 'calligraffitiregular';
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1.6em;
+    color: #f05060;
+}
+.trait_menu1{
+    max-width: 30%;
+    width: 100%;
+    height: auto;
+}
+.calligraffitiregular{
+    
+    display: inline-block;
+    position: relative;
+    font-family: 'calligraffitiregular';
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    min-width: 150px;
+}
+.calligraffitiregular::before{
+    content: '';
     position: absolute;
-    margin: auto;
-    right: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
     left: 0;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    font-family: 'didact_gothicregular';
-    font-weight: bold;
-    color: #ffd915;
-    cursor: pointer;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
-.reservation_menu1:hover /*bouton réservation*/
-{
-        transform: scale(1.15);
+.calligraffitiregular:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
+
 
 /* ----------------------Menu 2-------------------------*/
 #container2
@@ -279,8 +301,14 @@ p{
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
-.orange
-{
+.menuu2{
+    font-family: 'caviar_dreamsregular';
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #e38a12;
+}
+.orange{
     color: #e38a12;
 }
 .violet1{
@@ -290,37 +318,40 @@ p{
     color: #8f5aff;
 }
 
-.trait_orange
-{
-    width: 100%;
-    max-width: 500px;
-}
 .caviar_dreamsregular{
 font-family: 'caviar_dreamsregular';
 }
-.reservation_menu2{ /*bouton réservation*/
-    background-color: #00734d;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    border-radius: 10px;
-    position: absolute;
-    margin: auto;
-    right: 0;
-    left: 0;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    font-family: 'didact_gothicregular';
-    font-weight: bold;
-    color: #ffd915;
-    cursor: pointer;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
+.trait_menu2{
+    max-width: 35%;
+    width: 100%;
+    height: auto;
 }
-.reservation_menu2:hover /*bouton réservation*/
-{
-        transform: scale(1.15);
+.caviar_dreamsregular{
+    
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    min-width: 150px;
+}
+.caviar_dreamsregular::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    margin-bottom: -5px;
+}
+.caviar_dreamsregular:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* ----------------------Menu 3-------------------------*/
@@ -337,33 +368,51 @@ font-family: 'caviar_dreamsregular';
 	font-family: 'redressedregular';
 	text-align: center;
 	font-size: 1.8em;
-        background: -webkit-linear-gradient(0.99turn, #1f40df, #0889fb);
+    background: -webkit-linear-gradient(0.99turn, #1f40df, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.reservation_menu3{ /*bouton réservation*/
-    background-color: #00734d;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    border-radius: 10px;
-    position: absolute;
-    margin: auto;
-    right: 0;
-    left: 0;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    font-family: 'didact_gothicregular';
-    font-weight: bold;
-    color: #ffd915;
-    cursor: pointer;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
+.menuu3{
+    font-family: 'redressedregular';
+    text-align: center;
+    font-size: 1.8em;
+    color: #0889fb;
+ 
 }
-.reservation_menu3:hover /*bouton réservation*/
-{
-        transform: scale(1.15);
+.redressedregular{
+font-family: 'redressedregular';
+}
+.trait_menu3{
+    max-width: 27%;
+    width: 100%;
+    height: auto;
+}
+.redressedregular{
+    
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    min-width: 150px;
+}
+.redressedregular::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    margin-bottom: -5px;
+}
+.redressedregular:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* ----------------------Menu 4-------------------------*/
@@ -384,30 +433,48 @@ font-family: 'caviar_dreamsregular';
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.reservation_menu4{ /*bouton réservation*/
-    background-color: #00734d;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    border-radius: 10px;
+.menuu4{
+    font-family: 'dubielplainregular';
+    text-align: center;
+    font-size: 2em;   
+    color: #3e923a;
+}
+.dubielplainregular{
+font-family: 'dubielplainregular';
+}
+.trait_menu4{
+    max-width: 30%;
+    width: 100%;
+    height: auto;
+}
+.dubielplainregular{
+    
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    min-width: 150px;
+}
+.dubielplainregular::before{
+    content: '';
     position: absolute;
-    margin: auto;
-    right: 0;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
     left: 0;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    font-family: 'didact_gothicregular';
-    font-weight: bold;
-    color: #ffd915;
-    cursor: pointer;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 400ms;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;    
+    margin-bottom: -5px;
 }
-.reservation_menu4:hover /*bouton réservation*/
-{
-        transform: scale(1.15);
+.dubielplainregular:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
+
 /* ----------------------Mentions légales-------------------------*/
 #box_mentions{
     display: flex;
@@ -438,59 +505,11 @@ font-family: 'caviar_dreamsregular';
         flex-direction: column;
          text-align: center;
     }
-    .left
-    {
-        text-align: center;
-    }
+
 }
 
 /*smartphone*/
 @media only screen and (max-device-width:480px)
 {
 
-}
-
-
-
-
-
-
-/*------------------------------TEST / trait avec titre entrée, plat, dessert +souligner------------------------------------------------------------------------------*/
-
-#test_traits{
-    display: flex;
-    justify-content: center;
-    margin: 50px 50px 50px 50px;
-}
-.trait{
-    flex: 1;
-    max-width: 45%;
-    max-height: 80px;
-    min-width: 100px;
-}
-.calligraffitiregular{
-    flex: 1;
-        display: inline-block;
-    position: relative;
-    font-family: 'calligraffitiregular';
-    font-size: 1.5em;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-}
-.calligraffitiregular::before{
-    content: '';
-    position: absolute;
-    width: 50%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-.calligraffitiregular:hover::before{
-    transform: scaleX(1);
-    transform-origin: bottom left;
 }
