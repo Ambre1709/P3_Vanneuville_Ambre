@@ -71,6 +71,10 @@ header{
     display: flex;
     justify-content: center;
     background-color: #00734d;
+    margin: -10px -10px 0px -10px;
+    height: 90px;
+    align-items: center;
+
 }
 /* ----------------------FOOTER-------------------------*/
 .footer{
@@ -228,7 +232,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	background-color:#fad2d2;
-    margin: 50px 50px 50px 50px;
+    margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
 }
@@ -288,7 +292,7 @@ p{
     display: flex;
     flex-direction: column;
     background-color: #fafad2;
-    margin: 50px 50px 50px 50px;
+    margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
 }
@@ -360,7 +364,7 @@ font-family: 'caviar_dreamsregular';
     display: flex;
     flex-direction: column;
     background-color:#d0ecf9;
-    margin: 50px 50px 50px 50px;
+    margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
 }
@@ -421,7 +425,7 @@ font-family: 'redressedregular';
     display: flex;
     flex-direction: column;
     background-color:#fae6d2;
-    margin: 50px 50px 50px 50px;
+    margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
 }
@@ -488,28 +492,81 @@ font-family: 'dubielplainregular';
 /*RESPONSIVE DESIGN*/
 
 /*ordi*/
-@media screen and (min-width: 1025px)
+@media screen and (min-width: 1400px)
 {
     .mini_box{
         display: flex;
-         justify-content: space-around;
+         justify-content: space-between;
+         margin: 0px 300px 0px 300px;
     }
 }
 
-/*tablette*/
+/*petit écran*/
+@media screen and (max-width: 1399px)
+{
+    .mini_box
+    {
+        display: flex;
+        justify-content: space-between;
+         margin: 0px 120px 0px 120px;
+    }
+
+}
+/*tablettes*/                                /************************************ POURQUOI ON NE VOIT PAS LE FOOTER (IPAD VERTICALE)???? ****************************/
 @media screen and (max-width: 1024px)
 {
     .mini_box
     {
         display: flex;
+        justify-content: space-between;
+         margin: 0px 20px 0px 20px;
+    }
+    #container4
+    {
+        display: flex;
         flex-direction: column;
-         text-align: center;
+        background-color:#fae6d2;
+        margin: 0px -10px 55px -10px;
+        padding-bottom: 20px;
+        border-radius: 0px;
+    }
+        #container3
+    {
+        display: flex;
+        flex-direction: column;
+        background-color:#fae6d2;
+        margin: 0px -10px 55px -10px;
+        padding-bottom: 20px;
+        border-radius: 0px;
+    }
+        #container2
+    {
+        display: flex;
+        flex-direction: column;
+        background-color:#fae6d2;
+        margin: 0px -10px 55px -10px;
+        padding-bottom: 20px;
+        border-radius: 0px;
+    }
+        #container1
+    {
+        display: flex;
+        flex-direction: column;
+        background-color:#fae6d2;
+        margin: 0px -10px 55px -10px;
+        padding-bottom: 20px;
+        border-radius: 0px;
     }
 
 }
 
-/*smartphone*/
+/*smartphone*/                                /************************************ OU VA LE PRIX ???? ****************************/
 @media only screen and (max-device-width:480px)
 {
-
+    .mini_box
+    {
+        display: flex;
+        justify-content: space-between;
+         margin: 0px 10px 0px 10px;
+    }
 }
