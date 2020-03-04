@@ -115,7 +115,6 @@ header{
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 	margin: 50px 25px 50px 25px;
 }
-
 .zoom /*zoom sur l'image*/
 {
     cursor: pointer;
@@ -194,14 +193,7 @@ margin-left: 10px;
     }
 }
 /* ----------------------DANS LES 4 MENU-------------------------*/
-.left{
-    display: flex;
-    flex-direction: column;
-}
-.price{
-    display: flex;
-    flex-direction: column;
-}
+
 h1{
     font-family: 'balooregular';
     color: #ffd915;
@@ -228,6 +220,12 @@ p{
 .titre{
     font-size: 1.5em;
     text-align: center;
+    font-weight: : bold;
+    font-family: 'didact_gothicregular';
+    color: #353535;
+}
+.texte_droite{
+    font-weight: bold;
 }
 /* ----------------------Menu 1-------------------------*/
 
@@ -235,7 +233,7 @@ p{
 {
 	display: flex;
 	flex-direction: column;
-	background-color:#fad2d2;
+	background-color:#fcdfdb;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
@@ -245,17 +243,33 @@ p{
 	font-family: 'calligraffitiregular';
 	text-align: center;
 	font-weight: bold; 
+    margin-top: -25px;
 	font-size: 1.6em;
     background: -webkit-linear-gradient(0.99turn, #f05060, #f6916a);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-}
+}  
 .menuu1{
-        font-family: 'calligraffitiregular';
+    font-family: 'calligraffitiregular';
     text-align: center;
     font-weight: bold; 
     font-size: 1.6em;
     color: #f05060;
+    margin-top: -30px;
+}
+.menu_red{
+    display: flex;
+        background-color:#fcdfdb;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: 50px 25px 50px 25px;
+}
+.center{
+    text-align: center;
+    margin-bottom: 30px;
 }
 .trait_menu1{
     max-width: 30%;
@@ -267,7 +281,7 @@ p{
     display: inline-block;
     position: relative;
     font-family: 'calligraffitiregular';
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
@@ -296,6 +310,7 @@ p{
 {
     display: flex;
     flex-direction: column;
+    background-color:#fff7fe;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
@@ -316,6 +331,17 @@ p{
     font-weight: bold;
     font-size: 1.5em;
     color: #e38a12;
+    margin-top: -15px;
+}
+.menu_rose{
+    display: flex;
+    background-color:#fff7fe;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: 50px 25px 50px 25px;
 }
 .orange{
     color: #e38a12;
@@ -339,7 +365,7 @@ font-family: 'caviar_dreamsregular';
     
     display: inline-block;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
@@ -368,6 +394,7 @@ font-family: 'caviar_dreamsregular';
 {
     display: flex;
     flex-direction: column;
+    background-color:#f6f6f6;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
@@ -386,7 +413,18 @@ font-family: 'caviar_dreamsregular';
     text-align: center;
     font-size: 1.8em;
     color: #0889fb;
+    margin-top: -30px;
  
+}
+.menu_gris{
+    display: flex;
+    background-color:#f6f6f6;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: 50px 25px 50px 25px;
 }
 .redressedregular{
 font-family: 'redressedregular';
@@ -400,7 +438,7 @@ font-family: 'redressedregular';
     
     display: inline-block;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
@@ -447,6 +485,7 @@ font-family: 'redressedregular';
     text-align: center;
     font-size: 2em;   
     color: #3e923a;
+    margin-top: -25px;
 }
 .dubielplainregular{
 font-family: 'dubielplainregular';
@@ -499,75 +538,74 @@ font-family: 'dubielplainregular';
 /*ordi*/
 @media screen and (min-width: 1400px)
 {
-    .mini_box{
+    .block_texte_gauchedroite{
         display: flex;
-         justify-content: space-between;
-         margin: 0px 300px 0px 300px;
+        justify-content: space-between;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .block_texte{
+        display: flex;
+        flex-direction: column;
     }
 }
 
-/*petit écran*/
+/*petit écran et tablettes*/
 @media screen and (max-width: 1399px)
 {
-    .mini_box
-    {
+    .block_texte{
         display: flex;
-        justify-content: space-between;
-         margin: 0px 120px 0px 120px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30px;
     }
 
-}
-/*tablettes*/                                /************************************ POURQUOI ON NE VOIT PAS LE FOOTER (IPAD VERTICALE)???? ****************************/
-@media screen and (max-width: 1024px)
-{
-    .mini_box
-    {
+    .block_texte_gauchedroite{
         display: flex;
-        justify-content: space-between;
-         margin: 0px 20px 0px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
     }
-    #container4
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px -10px 55px -10px;
-        padding-bottom: 20px;
-        border-radius: 0px;
+        .texte_gauche{
+        width: 100%;
     }
-        #container3
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px -10px 55px -10px;
-        padding-bottom: 20px;
-        border-radius: 0px;
-    }
-        #container2
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px -10px 55px -10px;
-        padding-bottom: 20px;
-        border-radius: 0px;
-    }
-        #container1
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px -10px 55px -10px;
-        padding-bottom: 20px;
-        border-radius: 0px;
+            .texte_droite{
+        margin-top: -30px;
     }
 
 }
 
-/*smartphone*/                                /************************************ OU VA LE PRIX ???? ****************************/
+/*smartphone*/
 @media only screen and (max-device-width:480px)
 {
-    .mini_box
-    {
+    .block_texte_gauchedroite{
         display: flex;
-        justify-content: space-between;
-         margin: 0px 10px 0px 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #container1, #container2, #container3, #container4
+    {
+        margin: 50px 10px 100px 10px;
+    }
+    .trait_menu1{
+        max-width: 35%;
+        margin-left: -28px;
+        margin-right: -28px;
+    }
+    .trait_menu2{
+        max-width: 37%;
+        margin-left: -27px;
+        margin-right: -27px;
+    }
+    .trait_menu3{
+        max-width: 40%;
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    .trait_menu4{
+        max-width: 35%;
+        margin-left: -28px;
+        margin-right: -28px;
     }
 }
