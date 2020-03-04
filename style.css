@@ -225,6 +225,10 @@ p{
     justify-content: center;
     margin: 50px 50px 50px 50px;
 }
+.titre{
+    font-size: 1.5em;
+    text-align: center;
+}
 /* ----------------------Menu 1-------------------------*/
 
 #container1
@@ -232,6 +236,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	background-color:#fad2d2;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -291,7 +296,7 @@ p{
 {
     display: flex;
     flex-direction: column;
-    background-color: #fafad2;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -363,7 +368,7 @@ font-family: 'caviar_dreamsregular';
 {
     display: flex;
     flex-direction: column;
-    background-color:#d0ecf9;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -424,7 +429,7 @@ font-family: 'redressedregular';
 {
     display: flex;
     flex-direction: column;
-    background-color:#fae6d2;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     margin: 50px 50px 100px 50px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -525,7 +530,6 @@ font-family: 'dubielplainregular';
     {
         display: flex;
         flex-direction: column;
-        background-color:#fae6d2;
         margin: 0px -10px 55px -10px;
         padding-bottom: 20px;
         border-radius: 0px;
@@ -534,7 +538,6 @@ font-family: 'dubielplainregular';
     {
         display: flex;
         flex-direction: column;
-        background-color:#fae6d2;
         margin: 0px -10px 55px -10px;
         padding-bottom: 20px;
         border-radius: 0px;
@@ -543,7 +546,6 @@ font-family: 'dubielplainregular';
     {
         display: flex;
         flex-direction: column;
-        background-color:#fae6d2;
         margin: 0px -10px 55px -10px;
         padding-bottom: 20px;
         border-radius: 0px;
@@ -552,7 +554,6 @@ font-family: 'dubielplainregular';
     {
         display: flex;
         flex-direction: column;
-        background-color:#fae6d2;
         margin: 0px -10px 55px -10px;
         padding-bottom: 20px;
         border-radius: 0px;
