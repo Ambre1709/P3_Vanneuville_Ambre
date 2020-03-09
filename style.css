@@ -2,11 +2,11 @@
 @font-face { /* Ohmyfood */
     font-family: 'balooregular';
     src: url('Ohmyfood/fonts/Baloo-Regular-webfont.eot');
-    src: url('Ohmyfoodfonts/Baloo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Ohmyfoodfonts/Baloo-Regular-webfont.woff2') format('woff2'),
-         url('Ohmyfoodfonts/Baloo-Regular-webfont.woff') format('woff'),
-         url('Ohmyfoodfonts/Baloo-Regular-webfont.ttf') format('truetype'),
-         url('Ohmyfoodfonts/Baloo-Regular-webfont.svg#balooregular') format('svg');
+    src: url('Ohmyfood/fonts/Baloo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Ohmyfood/fonts/Baloo-Regular-webfont.woff2') format('woff2'),
+         url('Ohmyfood/fonts/Baloo-Regular-webfont.woff') format('woff'),
+         url('Ohmyfood/fonts/Baloo-Regular-webfont.ttf') format('truetype'),
+         url('Ohmyfood/fonts/Baloo-Regular-webfont.svg#balooregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
