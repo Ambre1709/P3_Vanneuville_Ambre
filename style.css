@@ -211,7 +211,7 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-#test_traits{
+.test_traits{
     display: flex;
     align-items: center;
     justify-content: center;
