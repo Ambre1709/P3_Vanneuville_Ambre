@@ -3,7 +3,6 @@
     font-family: 'balooregular';
     src: url('fonts/Baloo-Regular-webfont.eot');
     src: url('fonts/Baloo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Baloo-Regular-webfont.woff2') format('woff2'),
          url('fonts/Baloo-Regular-webfont.woff') format('woff'),
          url('fonts/Baloo-Regular-webfont.ttf') format('truetype'),
          url('fonts/Baloo-Regular-webfont.svg#balooregular') format('svg');
@@ -14,7 +13,6 @@
     font-family: 'calligraffitiregular';
     src: url('fonts/Calligraffiti-webfont.eot');
     src: url('fonts/Calligraffiti-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Calligraffiti-webfont.woff2') format('woff2'),
          url('fonts/Calligraffiti-webfont.woff') format('woff'),
          url('fonts/Calligraffiti-webfont.ttf') format('truetype'),
          url('fonts/Calligraffiti-webfont.svg#calligraffitiregular') format('svg');
@@ -25,7 +23,6 @@
     font-family: 'caviar_dreamsregular';
     src: url('fonts/CaviarDreams-webfont.eot');
     src: url('fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/CaviarDreams-webfont.woff2') format('woff2'),
          url('fonts/CaviarDreams-webfont.woff') format('woff'),
          url('fonts/CaviarDreams-webfont.ttf') format('truetype'),
          url('fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
@@ -36,7 +33,6 @@
     font-family: 'redressedregular';
     src: url('fonts/Redressed-webfont.eot');
     src: url('fonts/Redressed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Redressed-webfont.woff2') format('woff2'),
          url('fonts/Redressed-webfont.woff') format('woff'),
          url('fonts/Redressed-webfont.ttf') format('truetype'),
          url('fonts/Redressed-webfont.svg#redressedregular') format('svg');
@@ -47,7 +43,6 @@
     font-family: 'dubielplainregular';
     src: url('fonts/Dubiel-webfont.eot');
     src: url('fonts/Dubiel-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Dubiel-webfont.woff2') format('woff2'),
          url('fonts/Dubiel-webfont.woff') format('woff'),
          url('fonts/Dubiel-webfont.ttf') format('truetype'),
          url('fonts/Dubiel-webfont.svg#dubielplainregular') format('svg');
@@ -58,7 +53,6 @@
     font-family: 'didact_gothicregular';
     src: url('fonts/didactgothic-regular-webfont.eot');
     src: url('fonts/didactgothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/didactgothic-regular-webfont.woff2') format('woff2'),
          url('fonts/didactgothic-regular-webfont.woff') format('woff'),
          url('fonts/didactgothic-regular-webfont.ttf') format('truetype'),
          url('fonts/didactgothic-regular-webfont.svg#didact_gothicregular') format('svg');
@@ -105,6 +99,9 @@ header{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+body{
+    overflow-x: hidden;
 }
 .menu{ 
 	display: flex;
